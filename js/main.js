@@ -29,16 +29,14 @@ $("#img").on("change", function (e) {
       $(".preview").html('<img src="' + e.target.result + '">')
     };
     fileReader.readAsDataURL(file);
-  } else {
-    $(".preview").html('<img src="img/no_img.jpg">')
-  }
+  } 
 })
 
 // 商品登録ボタンを押した時の挙動
 $("#submit").on("click", function () {
   const p_name = $("#task_name").val();
   const price = $("#price").val();
-  const imageSrc = $(".preview img").attr('src');
+  const imageSrc = $(".preview img").attr('src') || 'img/no_img.jpg';
   const productId = Date.now().toString();
 
   const dataList = {
@@ -76,8 +74,6 @@ for (let i = 0; i < localStorage.length; i++){
   const value = JSON.parse(localStorage.getItem(key));
   
   productList.push(value);
-
-  console.log(childNum);
   
   if (key === "child_num") {
     continue
