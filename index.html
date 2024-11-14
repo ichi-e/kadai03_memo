@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <p class="logo"><img src="img/logo.png" alt="八百屋オンライン"></p>
+
+        <p><a href="product.html">ページを確認する ></a></p>
+    </header>
+    <div class="wrap">
+        
+        <section class="product_re">
+            <h2>タスク登録</h2>
+            <div class="form">
+                <div class="left_area">
+                    <!-- <div>
+                        <label for="child_num">お子様の数</label>
+                        <div>
+                            <select name="child_num" id="child_num">
+                                <option value="0">-</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div> -->
+                    <div>
+                        <label for="task_name">タスク名</label>
+                        <input type="text" name="task_name" id="task_name">
+                    </div>
+                    <div>
+                        <label for="price">報酬単価</label>
+                        <input type="text" name="price" id="price">
+                    </div>
+                </div>
+
+                <div class="product_img">
+                    <p>タスク画像</p>
+                    <div>
+                        <div class="preview"></div>
+                        <input type="file" name="img" id="img">
+                    </div>
+                </div>
+
+                <button id="submit">登録する</button>
+            </div>
+        </section>
+        <!-- product_re -->
+
+        <section class="product_list">
+            <h2>タスクリスト</h2>
+
+            <div class="product_area">
+                <div class="list_header item">
+                    <p>画像</p>
+                    <h3>タスク名</h3>
+                    <p>報酬単価</p>
+                    <p>タスク削除</p>
+                </div>
+            </div><!-- product_area -->
+        </section>
+        <!-- product_list -->
+
+
+        
+
+    </div>
+    <!-- field -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js?2"></script>
+</body>
+</html>
