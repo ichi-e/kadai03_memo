@@ -14,7 +14,7 @@ Tetsudau
 
 ③DEMO
 
-https://ichi-e.github.io/kadai02_janken_rich/
+https://ichi-e.github.io/kadai03_memo/index.html
 
 ④作ったアプリケーション用のIDまたはPasswordがある場合
 
