@@ -88,7 +88,7 @@ h2::before {
     display: block;
     margin-bottom: 20px;
 }
-#submit, .buy {
+#submit, .buy, .link {
     width: 50%;
     height: 40px;
     margin: 0 auto;
@@ -97,11 +97,13 @@ h2::before {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
 .delete:hover, 
 #submit:hover,
 .buy:hover,
-.plus:hover {
+.plus:hover,
+.link:hover {
     opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
@@ -183,6 +185,7 @@ figure img {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 50px 30px;
+    margin-bottom: 80px;
 }
 .product_page .item {
     text-align: center;
@@ -197,9 +200,11 @@ figure img {
     height: 200px;
     object-fit: cover;
 }
-.buy {
-    display: block;
-    margin: 30px auto;
+
+.link a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
 }
 .plus {
     border-radius: 50%;
@@ -219,6 +224,8 @@ figure img {
 .counter {
     margin: 10px 0;
 }
+
+/* カート */
 .total p {
     font-size: 20px;
     color: #ed9b9b;
@@ -226,13 +233,40 @@ figure img {
     text-align: right;
     margin: 10px 20px;
 }
+
 .message {
     text-align: center;
     font-size: 20px;
     padding: 100px 0;
     color: #ed9b9b;
     font-weight: bold;
-    }
-/* カート */
+}
+.reset_cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+}
+.buy {
+    display: block;
+}
+.reset_cont .buy,
+.reset_cont .link {
+    width: 100%;
+}
+.reset_cont .link {
+    background: #809b96;
+}
+.reset_cont.hide{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.reset_cont.hide .link {
+    width: 50%;
+}
+.reset_cont.hide .buy{
+    display: none;
+}
 @media screen and (min-width: 769px) {
 }
